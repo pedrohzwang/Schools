@@ -1,0 +1,18 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #756E6E;
+}
+
+.form-radius{
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+header{
+    background-color: lightgray;
+    width: 100%;
+    height: 80px;
+}
+
+
