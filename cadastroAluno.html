@@ -38,43 +38,118 @@
                 <form action="">
 
                     <div class="form-row">
-                        <div class="form-group col-sm-8">
-                            <label for="nome">Nome</label>
-                            <input class="form-control" required type="text" name="nome" id="nome" placeholder="João da Silva">
+                        <div class="form-group col-sm-7">
+                            <label for="nome">Nome da criança</label>
+                            <input class="form-control" required type="text" name="nome" id="nome"
+                                placeholder="João da Silva">
                         </div>
-                        <div class="form-group col-sm-2">
+                        <div class="ml-5 form-check form-check-inline input-group-prepend col-sm-1">
+                            <div class="input-group-text mt-3">Sexo</div>
+                        </div>
+                        <div class="form-check form-check-inline col-sm-1 mt-3">
+                            <input class="form-check-input" type="radio" name="sexo" id="sexoF" value="feminino">
+                            <label class="form-check-label" for="sexoF">Feminino</label>
+                        </div>
+                        <div class="form-check form-check-inline col-sm-1 mt-3">
+                            <input class="form-check-input" type="radio" name="sexo" id="sexoM" value="masculino">
+                            <label class="form-check-label" for="sexoM">Masculino</label>
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group col-sm-4">
                             <label for="dataNascimento">Data de Nascimento</label>
                             <input class="form-control" required type="date" name="dataNascimento" id="dataNascimento">
                         </div>
-                        <div class="form-group col-sm-2">
-                            <label for="cpf">CPF</label>
-                            <input class="form-control" required type="text" name="cpf" id="cpf" placeholder="12345678900">
-                        </div>  
+                        <div class="form-group col-sm-8">
+                            <label for="form-address">Endereço</label>
+                            <input type="search" class="form-control" id="form-address" />
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-5">
+                            <label for="form-address2">Região</label>
+                            <input type="text" class="form-control" id="regiao" />
+                        </div>
+                        <div class="form-group col-sm-3">
+                            <label for="form-city">Cidade</label>
+                            <input type="text" class="form-control" id="cidade" placeholder="Cidade">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="form-zip">CEP</label>
+                            <input type="text" class="form-control" id="cep" placeholder="CEP">
+                        </div>
+
                     </div>
 
                     <div class="form-row">
                         <div class="form-group col-sm-8">
                             <label for="nomeMae">Nome da Mãe</label>
-                            <input class="form-control" type="text" name="nomeMae" id="nomeMae" placeholder="João da Silva">
+                            <input class="form-control" type="text" name="nomeMae" id="nomeMae"
+                                placeholder="João da Silva">
                         </div>
-                        <div class="form-group col-sm-2">
-                            <label for="cpfMae">CPF</label>
-                            <input class="form-control" type="text" name="cpfMae" id="cpfMae" placeholder="12345678900">
-                        </div>  
+                        <div class="form-group col-sm-4">
+                            <label for="localTrabalhoMae">Local de Trabalho</label>
+                            <input class="form-control" type="text" name="localTrabalhoMae" id="localTrabalhoMae"
+                                placeholder="Comercial Juninho">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-4">
+                            <label for="telefoneComercialMae">Telefone Comercial</label>
+                            <input type="text" class="form-control" name="telefoneComercialMae"
+                                id="telefoneComercialMae">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="telefoneResidencialMae">Telefone Residencial</label>
+                            <input class="form-control" type="text" name="telefoneResidencialMae"
+                                id="telefoneResidencialMae">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="outroTelefoneMae">Outro</label>
+                            <input class="form-control" type="text" name="outroTelefoneMae" id="outroTelefoneMae">
+                        </div>
+                        
                     </div>
 
                     <div class="form-row">
                         <div class="form-group col-sm-8">
                             <label for="nomePai">Nome do Pai</label>
-                            <input class="form-control" type="text" name="nomePai" id="nomePai" placeholder="João da Silva">
+                            <input class="form-control" type="text" name="nomePai" id="nomePai"
+                                placeholder="João da Silva">
                         </div>
-                        <div class="form-group col-sm-2">
-                            <label for="cpfPai">CPF</label>
-                            <input class="form-control" type="text" name="cpfPai" id="cpfPai" placeholder="12345678900">
-                        </div>  
+                        <div class="form-group col-sm-4">
+                            <label for="localTrabalhoPai">Local de Trabalho</label>
+                            <input class="form-control" type="text" name="localTrabalhoPai" id="localTrabalhoPai"
+                                placeholder="Comercial Juninho">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-4">
+                            <label for="telefoneComercialPai">Telefone Comercial</label>
+                            <input type="text" class="form-control" name="telefoneComercialPai"
+                                id="telefoneComercialPai">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="telefoneResidencialPai">Telefone Residencial</label>
+                            <input class="form-control" type="text" name="telefoneResidencialPai"
+                                id="telefoneResidencialPai">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="outroTelefonePai">Outro</label>
+                            <input class="form-control" type="text" name="outroTelefonePai" id="outroTelefonePai">
+                        </div>
+                        
                     </div>
 
-                    
+
+
+
                 </form>
 
             </div>
@@ -94,7 +169,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/places.js@1.19.0"></script>
+    <script src="assets/js/cadAlunoAlgolia.js"></script>
 </body>
 
 </html>
