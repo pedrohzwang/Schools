@@ -33,6 +33,11 @@
         </div>
 
         <div class="row">
+            <div class="col-sm-12 text-center">
+                <h3>Dados Pessoais</h3>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-sm-12">
 
                 <form action="">
@@ -43,18 +48,28 @@
                             <input class="form-control" required type="text" name="nome" id="nome"
                                 placeholder="João da Silva">
                         </div>
-                        <div class="ml-5 form-check form-check-inline input-group-prepend col-sm-1">
-                            <div class="input-group-text mt-3">Sexo</div>
-                        </div>
-                        <div class="form-check form-check-inline col-sm-1 mt-3">
-                            <input class="form-check-input" type="radio" name="sexo" id="sexoF" value="feminino">
-                            <label class="form-check-label" for="sexoF">Feminino</label>
-                        </div>
-                        <div class="form-check form-check-inline col-sm-1 mt-3">
-                            <input class="form-check-input" type="radio" name="sexo" id="sexoM" value="masculino">
-                            <label class="form-check-label" for="sexoM">Masculino</label>
-                        </div>
-
+                        
+                        <fieldset class="form-group col-sm-3 offset-sm-1">
+                            <div class="row">
+                                <legend class="col-form-label col-sm-12 pt-0">Sexo</legend>
+                                <div class="col-sm-12 mt-2">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sexo"
+                                            id="sexo1" value="feminino" checked>
+                                        <label class="form-check-label" for="sexo1">
+                                            Feminino
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline ml-5">
+                                        <input class="form-check-input" type="radio" name="sexo"
+                                            id="sexo2" value="Masculino">
+                                        <label class="form-check-label" for="sexo2">
+                                            Masculino
+                                        </label>
+                                    </div>
+                                </div>   
+                            </div>
+                        </fieldset>
                     </div>
 
                     <div class="form-row">
@@ -88,66 +103,179 @@
 
                     <div class="form-row">
                         <div class="form-group col-sm-8">
-                            <label for="nomeMae">Nome da Mãe</label>
-                            <input class="form-control" type="text" name="nomeMae" id="nomeMae"
+                            <label for="nomeResponsavel1">Nome do Responsável</label>
+                            <input class="form-control" type="text" name="nomeResponsavel" id="nomeResponsavel1"
                                 placeholder="João da Silva">
                         </div>
                         <div class="form-group col-sm-4">
-                            <label for="localTrabalhoMae">Local de Trabalho</label>
-                            <input class="form-control" type="text" name="localTrabalhoMae" id="localTrabalhoMae"
+                            <label for="localTrabalhoResponsavel1">Local de Trabalho</label>
+                            <input class="form-control" type="text" name="localTrabalhoResponsavel" id="localTrabalhoResponsavel1"
                                 placeholder="Comercial Juninho">
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group col-sm-4">
-                            <label for="telefoneComercialMae">Telefone Comercial</label>
-                            <input type="text" class="form-control" name="telefoneComercialMae"
-                                id="telefoneComercialMae">
+                            <label for="telefoneComercialResponsavel1">Telefone Comercial</label>
+                            <input type="text" class="form-control" name="telefoneComercialResponsavel"
+                                id="telefoneComercialResponsavel1">
                         </div>
                         <div class="form-group col-sm-4">
-                            <label for="telefoneResidencialMae">Telefone Residencial</label>
-                            <input class="form-control" type="text" name="telefoneResidencialMae"
-                                id="telefoneResidencialMae">
+                            <label for="telefoneResidencialResponsavel1">Telefone Residencial</label>
+                            <input class="form-control" type="text" name="telefoneResidencialResponsavel"
+                                id="telefoneResidencialResponsavel1">
                         </div>
                         <div class="form-group col-sm-4">
-                            <label for="outroTelefoneMae">Outro</label>
-                            <input class="form-control" type="text" name="outroTelefoneMae" id="outroTelefoneMae">
+                            <label for="outroTelefoneResponsavel1">Outro</label>
+                            <input class="form-control" type="text" name="outroTelefoneResponsavel" id="outroTelefoneResponsavel1">
                         </div>
-                        
+
+                    </div>
+
+                    <div class="form group col-sm-12 text-center mt-3 mb-4">
+                        <button class="btn btn-dark">Adicionar Responsável</button>
+                    </div>
+
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-3 pt-0">Portador de Necessidades Especiais</legend>
+                            <div class="col-sm-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="necessidadesEspeciais"
+                                        id="necessidadesEspeciais1" value="sim" checked>
+                                    <label class="form-check-label" for="necessidadesEspeciais1">
+                                        Sim
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="necessidadesEspeciais"
+                                        id="necessidadesEspeciais2" value="nao">
+                                    <label class="form-check-label" for="necessidadesEspeciais2">
+                                        Não
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-7">
+                                <textarea class="form-control" id="necessidadesEspeciaisDescricao"
+                                    placeholder="Descreva a(s) necessidade(s)" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-3 pt-0">Possui Alergias</legend>
+                            <div class="col-sm-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="alergias" id="alergias1"
+                                        value="sim" checked>
+                                    <label class="form-check-label" for="alergias1">
+                                        Sim
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="alergias" id="alergias2"
+                                        value="nao">
+                                    <label class="form-check-label" for="alergias2">
+                                        Não
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-7">
+                                <textarea class="form-control" id="alergiasDescricao"
+                                    placeholder="Descreva a(s) alergia(s)" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-3 pt-0">Doença que exija cuidado especial</legend>
+                            <div class="col-sm-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="cuidadosEspeciais"
+                                        id="cuidadosEspeciais1" value="sim" checked>
+                                    <label class="form-check-label" for="cuidadosEspeciais1">
+                                        Sim
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="cuidadosEspeciais"
+                                        id="cuidadosEspeciais2" value="nao">
+                                    <label class="form-check-label" for="cuidadosEspeciais2">
+                                        Não
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-7">
+                                <textarea class="form-control" id="cuidadosEspeciaisDescricao"
+                                    placeholder="Descreva o(s) cuidado(s)" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h3>Dados Escolares</h3>
+                        </div>
                     </div>
 
                     <div class="form-row">
-                        <div class="form-group col-sm-8">
-                            <label for="nomePai">Nome do Pai</label>
-                            <input class="form-control" type="text" name="nomePai" id="nomePai"
-                                placeholder="João da Silva">
+                        <div class="form-group col-sm-6">
+                            <label for="escola">Escola</label>
+                            <input class="form-control" type="text" name="escola" placeholder="Escola que frequenta" id="escola">
                         </div>
-                        <div class="form-group col-sm-4">
-                            <label for="localTrabalhoPai">Local de Trabalho</label>
-                            <input class="form-control" type="text" name="localTrabalhoPai" id="localTrabalhoPai"
-                                placeholder="Comercial Juninho">
+                        <div class="form-group col-sm-3">
+                            <label for="ano">Ano (série)</label>
+                            <input type="text" class="form-control" placeholder="Ano escolar" name="ano" id="ano">
+                        </div>
+                        <div class="form-group col-sm-3">
+                            <label for="turno">Turno</label>
+                            <select class="custom-select" name="turnos" id="turno">
+                                <option value="" selected disabled>Escolha...</option>
+                                <option value="matutino">Matutino</option>
+                                <option value="vespertino">Vespertino</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-sm-4">
-                            <label for="telefoneComercialPai">Telefone Comercial</label>
-                            <input type="text" class="form-control" name="telefoneComercialPai"
-                                id="telefoneComercialPai">
+
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h3>Matrícula</h3>
                         </div>
-                        <div class="form-group col-sm-4">
-                            <label for="telefoneResidencialPai">Telefone Residencial</label>
-                            <input class="form-control" type="text" name="telefoneResidencialPai"
-                                id="telefoneResidencialPai">
-                        </div>
-                        <div class="form-group col-sm-4">
-                            <label for="outroTelefonePai">Outro</label>
-                            <input class="form-control" type="text" name="outroTelefonePai" id="outroTelefonePai">
-                        </div>
-                        
                     </div>
 
+                    <div class="row">
+                        <div class="form-group col-sm-3">
+                            <label for="valorMatricula">Valor da Matrícula</label>
+                            <input class="form-control" type="number" name="valorMatricula" id="valorMatricula">
+                        </div>
+                        <div class="form-group col-sm-4 offset-sm-1">
+                            <label for="valorMensalidade">Valor da Mensalidade</label>
+                            <input class="form-control" type="number" name="valorMensalidade" id="valorMensalidade">
+                        </div>
+                        <div class="form-group col-sm-3 offset-sm-1">
+                            <label for="vencimentoMensalidade">Vencimento da Mensalidade</label>
+                            <input class="form-control" type="date" name="vencimentoMensalidade" id="vencimentoMensalidade">
+                        </div>
+                    </div>
 
+                    <div class="row">
+                        <div class="form-group col-sm-4">
+                            <label for="dataMatricula">Data da Matrícula</label>
+                            <input class="form-control" type="date" name="dataMatricula" id="dataMatricula">
+                        </div>
+                        <div class="form-group offset-sm-4 col-sm-4">
+                            <label for="dataInicio">Data de Início</label>
+                            <input type="date" class="form-control" name="dataInicio" id="dataInicio">
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-sm-12 text-center">
+                            <a class="btn btn-dark" href="home.html">Salvar</a>
+                        </div>
+                    </div>
                 </form>
 
             </div>
