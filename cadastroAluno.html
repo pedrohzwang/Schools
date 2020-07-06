@@ -147,7 +147,7 @@
 
                     </div>
 
-                    <div class="form group col-sm-12 text-center mt-3 mb-3">
+                    <div class="form group col-sm-12 text-center mt-3 mb-4">
                         <button class="btn btn-dark">Adicionar Responsável</button>
                     </div>
 
@@ -170,9 +170,64 @@
                                     </label>
                                 </div>
                             </div>
+                            <div class="form-group col-sm-7">
+                                <textarea class="form-control" id="necessidadesEspeciaisDescricao"
+                                    placeholder="Descreva a(s) necessidade(s)" rows="3"></textarea>
+                            </div>
                         </div>
                     </fieldset>
 
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-3 pt-0">Possui Alergias</legend>
+                            <div class="col-sm-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="alergias" id="alergias1"
+                                        value="sim" checked>
+                                    <label class="form-check-label" for="alergias1">
+                                        Sim
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="alergias" id="alergias2"
+                                        value="nao">
+                                    <label class="form-check-label" for="alergias2">
+                                        Não
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-7">
+                                <textarea class="form-control" id="alergiasDescricao"
+                                    placeholder="Descreva a(s) alergia(s)" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-3 pt-0">Doença que exija cuidado especial</legend>
+                            <div class="col-sm-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="cuidadosEspeciais"
+                                        id="cuidadosEspeciais1" value="sim" checked>
+                                    <label class="form-check-label" for="cuidadosEspeciais1">
+                                        Sim
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="cuidadosEspeciais"
+                                        id="cuidadosEspeciais2" value="nao">
+                                    <label class="form-check-label" for="cuidadosEspeciais2">
+                                        Não
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-7">
+                                <textarea class="form-control" id="cuidadosEspeciaisDescricao"
+                                    placeholder="Descreva o(s) cuidado(s)" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
                 </form>
 
             </div>
