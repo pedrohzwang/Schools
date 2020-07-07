@@ -10,118 +10,155 @@
 </head>
 
 <body>
+
+    <div class="row mb-5 w-100 mx-auto">
+        <div class="col-sm-12">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="home.html">Schools</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastroAluno.html">Cadastrar Aluno</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastroFunc.html">Cadastrar Funcionário</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="entradaESaida.html">Entradas e Saídas</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <span class="navbar-text">
+                    <a href="#">Sair</a>
+                </span>
+            </nav>
+        </div>
+    </div>
+
     <form action="#" method="post">
-        <div class="container float">
-            <div class="col-12 text-center">
-                <h1>Cadastro de Funcionário</h1>
-            </div>
-            <div class="col-sm form-group">
-                <label for="Nome">Nome completo</label>
-                <br>
-                <input type="text" id="Nome" class="form-control border border-dark">
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="col-8 float-left">
-                <div class="row col-12">
-                    <h2>Pessoal</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Cadastro de Funcionário</h1>
                 </div>
-                <div class="form-row">
-                    <div class="col-sm form-group">
-                        <label for="Data de nascimento">Data de nascimento</label>
-                        <br>
-                        <input type="date" name="" id="Data de nascimento" class="form-control border border-dark">
-                    </div>
-                    <div class="col-4 form-group">
-                        <label for="Sexo" class="offset-sm-3">Sexo</label>
-                        <br>
-                        <div class="form-check offset-sm-3 mt-1 float-left">
-                            <input class="form-check-input" type="radio" name="sexo" id="masculino">
-                            <label class="form-check-label" for="masculino">Masculino</label>
-                        </div>
-                        <div class="form-check mt-1 ml-5">
-                            <input class="form-check-input ml-4" type="radio" name="sexo" id="feminino">
-                            <label class="form-check-label ml-5" for="feminino">Feminino</label>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <label for="Nome">Nome completo</label>
+                    <input type="text" id="Nome" class="form-control border border-dark">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-8">
+                    <div class="form-row">
+                        <div class="col-2">
+                            <h2>Pessoal</h2>
                         </div>
                     </div>
-                    <div class="col-3 form-group">
-                        <label for="CPF">CPF</label>
-                        <br>
-                        <input type="number" id="CPF" class="form-control border border-dark">
+                    <div class="form-row">
+                        <div class="col-3 form-group">
+                            <label for="Data de nascimento">Data de nascimento</label>
+                            <input type="date" name="" id="Data de nascimento" class="form-control border border-dark">
+                        </div>
+                        <fieldset class="form-group col-4">
+                            <div class="row">
+                                <legend class="col-form-label col-sm-3">Sexo</legend>
+                                <div class="col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sexo" id="sexo1"
+                                            value="feminino">
+                                        <label class="form-check-label" for="sexo1">
+                                            Feminino
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sexo" id="sexo2"
+                                            value="Masculino">
+                                        <label class="form-check-label mr-0" for="sexo2">
+                                            Masculino
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="col-sm-3 form-group">
+                            <label for="CPF">CPF</label>
+                            <input type="number" id="CPF" class="form-control border border-dark">
+                        </div>
+                        <div class="col-sm-2 form-group">
+                            <label for="RG">RG</label>
+                            <input type="number" id="RG" class="form-control border border-dark">
+                        </div>
                     </div>
-                    <div class="col-2 form-group">
-                        <label for="RG">RG</label>
-                        <br>
-                        <input type="number" id="RG" class="form-control border border-dark">
+                    <div class="form-row">
+                        <div class="col-3 form-group">
+                            <label for="CEP">CEP</label>
+                            <input type="text" id="CEP" class="form-control border border-dark">
+                        </div>
+                        <div class="col-7 form-group">
+                            <label for="Logradouro">Logradouro</label>
+                            <input type="text" id="Logradouro" class="form-control border border-dark">
+                        </div>
+                        <div class="col-2 form-group">
+                            <label for="Número">Número</label>
+                            <input type="number" id="Número" class="form-control border border-dark">
+                        </div>
                     </div>
+                    <div class="form-row">
+                        <div class="col-2 form-group">
+                            <label for="Complemento">Complemento</label>
+                            <input type="text" id="Complemento" class="form-control border border-dark">
+                        </div>
+                        <div class="col-3 form-group">
+                            <label for="Bairro">Bairro</label>
+                            <input type="text" id="Bairro" class="form-control border border-dark">
+                        </div>
+                        <div class="col-5 form-group">
+                            <label for="Cidade">Cidade</label>
+                            <input type="text" id="Cidade" class="form-control border border-dark">
+                        </div>
+                        <div class="col-sm form-group">
+                            <label for="Estado">Estado</label>
+                            <input type="text" id="Estado" class="form-control border border-dark">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-4 form-group">
+                            <label for="Admissao">Admissão</label>
+                            <input type="date" id="Admissao" class="form-control border border-dark">
+                        </div>
+                    </div>
+
                 </div>
-                <div class="form-row">
-                    <div class="col-3 form-group">
-                        <label for="CEP">CEP</label>
-                        <br>
-                        <input type="text" id="CEP" class="form-control border border-dark">
+
+                <div class="col-4">
+                    <div class="col-12">
+                        <h2>Telefones e E-mail</h2>
                     </div>
-                    <div class="col-7 form-group">
-                        <label for="Logradouro">Logradouro</label>
-                        <br>
-                        <input type="text" id="Logradouro" class="form-control border border-dark">
+                    <div class="col form-group">
+                        <label for="Celular">Celular</label>
+                        <input type="number" id="Celular" class="form-control border border-dark">
                     </div>
-                    <div class="col-sm form-group">
-                        <label for="Número">Número</label>
-                        <br>
-                        <input type="number" id="Número" class="form-control border border-dark">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="col-2 form-group">
-                        <label for="Complemento">Complemento</label>
-                        <br>
-                        <input type="text" id="Complemento" class="form-control border border-dark">
-                    </div>
-                    <div class="col-3 form-group">
-                        <label for="Bairro">Bairro</label>
-                        <br>
-                        <input type="text" id="Bairro" class="form-control border border-dark">
-                    </div>
-                    <div class="col-5 form-group">
-                        <label for="Cidade">Cidade</label>
-                        <br>
-                        <input type="text" id="Cidade" class="form-control border border-dark">
-                    </div>
-                    <div class="col-sm form-group">
-                        <label for="Estado">Estado</label>
-                        <br>
-                        <input type="text" id="Estado" class="form-control border border-dark">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="col-4 form-group">
-                        <label for="Admissao">Admissão</label>
-                        <br>
-                        <input type="date" id="Admissao" class="form-control border border-dark">
+                    <div class="col form-group">
+                        <label for="Fone Residencial">Fone Residencial</label>
+                        <input type="number" id="Fone Residencial" class="form-control border border-dark">
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-4 float-left">
-            <div class="col-12">
-                <h2>Telefones e E-mail</h2>
+
+            <div class="row text-center">
+                <a href="home.html" class="btn btn-dark mx-auto">Salvar</a>
             </div>
-            <div class="col-sm form-group">
-                <label for="Celular">Celular</label>
-                <br>
-                <input type="number" id="Celular" class="form-control border border-dark">
-            </div>
-            <div class="col-sm form-group">
-                <label for="Fone Residencial">Fone Residencial</label>
-                <br>
-                <input type="number" id="Fone Residencial" class="form-control border border-dark">
-            </div>
-        </div>
-        <div class="row col-12">
-            <a href="home.html" class="btn btn-dark mx-auto">Salvar</a>
-        </div>
     </form>
+    </div>
 </body>
 
 </html>
