@@ -12,11 +12,36 @@
 
 <body>
 
-    <header>
-        <div class="text-center">
-            <h1>Schools</h1>
+    <div class="row mb-5 w-100 mx-auto">
+        <div class="col-sm-12">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="home.html">Schools</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastroAluno.html">Cadastrar Aluno</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastroFunc.html">Cadastrar Funcionário</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="entradaESaida.html">Entradas e Saídas</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <span class="navbar-text">
+                    <a href="#">Sair</a>
+                </span>
+            </nav>
         </div>
-    </header>
+    </div>
 
     <div class="container mt-4">
 
@@ -45,7 +70,7 @@
                     <div class="form-row">
                         <div class="form-group col-sm-7">
                             <label for="nome">Nome da criança</label>
-                            <input autofocus class="form-control" type="text" name="nome" id="nome"
+                            <input autofocus class="form-control border border-dark" type="text" name="nome" id="nome"
                                 placeholder="João da Silva">
                         </div>
 
@@ -55,7 +80,7 @@
                                 <div class="col-sm-12 mt-2">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="sexo" id="sexo1"
-                                            value="feminino" checked>
+                                            value="feminino">
                                         <label class="form-check-label" for="sexo1">
                                             Feminino
                                         </label>
@@ -76,11 +101,11 @@
 
                         <div class="form-group col-sm-4">
                             <label for="dataNascimento">Data de Nascimento</label>
-                            <input class="form-control" type="date" name="dataNascimento" id="dataNascimento">
+                            <input class="form-control border border-dark" type="date" name="dataNascimento" id="dataNascimento">
                         </div>
                         <div class="form-group col-sm-8">
                             <label for="form-address">Endereço</label>
-                            <input type="search" class="form-control" id="form-address" />
+                            <input type="search" class="form-control border border-dark" id="form-address" />
                         </div>
 
                     </div>
@@ -88,15 +113,15 @@
                     <div class="form-row">
                         <div class="form-group col-sm-5">
                             <label for="form-address2">Região</label>
-                            <input type="text" class="form-control" id="regiao" />
+                            <input type="text" class="form-control border border-dark" id="regiao" />
                         </div>
                         <div class="form-group col-sm-3">
                             <label for="form-city">Cidade</label>
-                            <input type="text" class="form-control" id="cidade" placeholder="Cidade">
+                            <input type="text" class="form-control border border-dark" id="cidade" placeholder="Cidade">
                         </div>
                         <div class="form-group col-sm-4">
                             <label for="form-zip">CEP</label>
-                            <input type="text" class="form-control" id="cep" placeholder="CEP">
+                            <input type="text" class="form-control border border-dark" id="cep" placeholder="CEP">
                         </div>
 
                     </div>
@@ -104,12 +129,12 @@
                     <div class="form-row">
                         <div class="form-group col-sm-8">
                             <label for="nomeResponsavel1">Nome do Responsável</label>
-                            <input class="form-control" type="text" name="nomeResponsavel" id="nomeResponsavel1"
+                            <input class="form-control border border-dark" type="text" name="nomeResponsavel" id="nomeResponsavel1"
                                 placeholder="João da Silva">
                         </div>
                         <div class="form-group col-sm-4">
                             <label for="localTrabalhoResponsavel1">Local de Trabalho</label>
-                            <input class="form-control" type="text" name="localTrabalhoResponsavel"
+                            <input class="form-control border border-dark" type="text" name="localTrabalhoResponsavel"
                                 id="localTrabalhoResponsavel1" placeholder="Comercial Juninho">
                         </div>
                     </div>
@@ -117,17 +142,17 @@
                     <div class="form-row">
                         <div class="form-group col-sm-4">
                             <label for="telefoneComercialResponsavel1">Telefone Comercial</label>
-                            <input type="text" class="form-control" name="telefoneComercialResponsavel"
+                            <input type="text" class="form-control border border-dark" name="telefoneComercialResponsavel"
                                 id="telefoneComercialResponsavel1">
                         </div>
                         <div class="form-group col-sm-4">
                             <label for="telefoneResidencialResponsavel1">Telefone Residencial</label>
-                            <input class="form-control" type="text" name="telefoneResidencialResponsavel"
+                            <input class="form-control border border-dark" type="text" name="telefoneResidencialResponsavel"
                                 id="telefoneResidencialResponsavel1">
                         </div>
                         <div class="form-group col-sm-4">
                             <label for="outroTelefoneResponsavel1">Outro</label>
-                            <input class="form-control" type="text" name="outroTelefoneResponsavel"
+                            <input class="form-control border border-dark" type="text" name="outroTelefoneResponsavel"
                                 id="outroTelefoneResponsavel1">
                         </div>
 
@@ -144,7 +169,7 @@
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="necessidadesEspeciais"
                                         onchange="habilitarTextArea(necessidadesEspeciaisDescricao)"
-                                        id="necessidadesEspeciais1" value="sim" checked>
+                                        id="necessidadesEspeciais1" value="sim">
                                     <label class="form-check-label" for="necessidadesEspeciais1">
                                         Sim
                                     </label>
@@ -159,7 +184,7 @@
                                 </div>
                             </div>
                             <div class="form-group col-sm-7">
-                                <textarea class="form-control" id="necessidadesEspeciaisDescricao"
+                                <textarea class="form-control border border-dark" id="necessidadesEspeciaisDescricao"
                                     placeholder="Descreva a(s) necessidade(s)" rows="3"></textarea>
                             </div>
                         </div>
@@ -171,7 +196,7 @@
                             <div class="col-sm-2">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="alergias" id="alergias1"
-                                        onchange="habilitarTextArea(alergiasDescricao)" value="sim" checked>
+                                        onchange="habilitarTextArea(alergiasDescricao)" value="sim">
                                     <label class="form-check-label" for="alergias1">
                                         Sim
                                     </label>
@@ -185,7 +210,7 @@
                                 </div>
                             </div>
                             <div class="form-group col-sm-7">
-                                <textarea class="form-control" id="alergiasDescricao"
+                                <textarea class="form-control border border-dark" id="alergiasDescricao"
                                     placeholder="Descreva a(s) alergia(s)" rows="3"></textarea>
                             </div>
                         </div>
@@ -198,7 +223,7 @@
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="cuidadosEspeciais"
                                         onchange="habilitarTextArea(cuidadosEspeciaisDescricao)"
-                                        id="cuidadosEspeciais1" value="sim" checked>
+                                        id="cuidadosEspeciais1" value="sim">
                                     <label class="form-check-label" for="cuidadosEspeciais1">
                                         Sim
                                     </label>
@@ -213,7 +238,7 @@
                                 </div>
                             </div>
                             <div class="form-group col-sm-7">
-                                <textarea class="form-control" id="cuidadosEspeciaisDescricao"
+                                <textarea class="form-control border border-dark" id="cuidadosEspeciaisDescricao"
                                     placeholder="Descreva o(s) cuidado(s)" rows="3"></textarea>
                             </div>
                         </div>
@@ -228,16 +253,16 @@
                     <div class="form-row">
                         <div class="form-group col-sm-6">
                             <label for="escola">Escola</label>
-                            <input class="form-control" type="text" name="escola" placeholder="Escola que frequenta"
+                            <input class="form-control border border-dark" type="text" name="escola" placeholder="Escola que frequenta"
                                 id="escola">
                         </div>
                         <div class="form-group col-sm-3">
                             <label for="ano">Ano (série)</label>
-                            <input type="text" class="form-control" placeholder="Ano escolar" name="ano" id="ano">
+                            <input type="text" class="form-control border border-dark" placeholder="Ano escolar" name="ano" id="ano">
                         </div>
                         <div class="form-group col-sm-3">
                             <label for="turno">Turno</label>
-                            <select class="custom-select" name="turnos" id="turno">
+                            <select class="custom-select border border-dark" name="turnos" id="turno">
                                 <option value="" selected disabled>Escolha...</option>
                                 <option value="matutino">Matutino</option>
                                 <option value="vespertino">Vespertino</option>
@@ -254,15 +279,15 @@
                     <div class="row">
                         <div class="form-group col-sm-3">
                             <label for="valorMatricula">Valor da Matrícula</label>
-                            <input class="form-control" type="number" name="valorMatricula" id="valorMatricula">
+                            <input class="form-control border border-dark" type="number" name="valorMatricula" id="valorMatricula">
                         </div>
                         <div class="form-group col-sm-4 offset-sm-1">
                             <label for="valorMensalidade">Valor da Mensalidade</label>
-                            <input class="form-control" type="number" name="valorMensalidade" id="valorMensalidade">
+                            <input class="form-control border border-dark" type="number" name="valorMensalidade" id="valorMensalidade">
                         </div>
                         <div class="form-group col-sm-3 offset-sm-1">
                             <label for="vencimentoMensalidade">Vencimento da Mensalidade</label>
-                            <input class="form-control" type="date" name="vencimentoMensalidade"
+                            <input class="form-control border border-dark" type="date" name="vencimentoMensalidade"
                                 id="vencimentoMensalidade">
                         </div>
                     </div>
@@ -270,11 +295,11 @@
                     <div class="row">
                         <div class="form-group col-sm-4">
                             <label for="dataMatricula">Data da Matrícula</label>
-                            <input class="form-control" type="date" name="dataMatricula" id="dataMatricula">
+                            <input class="form-control border border-dark" type="date" name="dataMatricula" id="dataMatricula">
                         </div>
                         <div class="form-group offset-sm-4 col-sm-4">
                             <label for="dataInicio">Data de Início</label>
-                            <input type="date" class="form-control" name="dataInicio" id="dataInicio">
+                            <input type="date" class="form-control border border-dark" name="dataInicio" id="dataInicio">
                         </div>
                     </div>
 
