@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schools | Cadastro de Aluno</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
-
     <div class="row mb-5 w-100 mx-auto">
         <div class="col-sm-12">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -21,7 +20,6 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
@@ -34,7 +32,6 @@
                             <a class="nav-link" href="entradaESaida.html">Entradas e Saídas</a>
                         </li>
                     </ul>
-
                 </div>
                 <span class="navbar-text">
                     <a href="#">Sair</a>
@@ -42,21 +39,17 @@
             </nav>
         </div>
     </div>
-
     <div class="container mt-4">
-
         <div class="row">
             <div class="col-sm-12 text-center">
                 <h2>Cadastro de Aluno</h2>
             </div>
         </div>
-
         <div class="row">
             <div class="col-sm-12 text-center">
                 <img src="assets/img/usuario.png" alt="Aluno">
             </div>
         </div>
-
         <div class="row">
             <div class="col-sm-12 text-center">
                 <h3>Dados Pessoais</h3>
@@ -64,16 +57,12 @@
         </div>
         <div class="row">
             <div class="col-sm-12">
-
-                <form action="">
-
+                <form action="#" method="post">
                     <div class="form-row">
                         <div class="form-group col-sm-7">
                             <label for="nome">Nome da criança</label>
-                            <input autofocus class="form-control border border-dark" type="text" name="nome" id="nome"
-                                placeholder="João da Silva">
+                            <input autofocus class="form-control border border-dark" type="text" name="nome" id="nome">
                         </div>
-
                         <fieldset class="form-group col-sm-3 offset-sm-1">
                             <div class="row">
                                 <legend class="col-form-label col-sm-12 pt-0">Sexo</legend>
@@ -81,87 +70,74 @@
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="sexo" id="sexo1"
                                             value="feminino">
-                                        <label class="form-check-label" for="sexo1">
-                                            Feminino
-                                        </label>
+                                        <label class="form-check-label" for="sexo1">Feminino</label>
                                     </div>
                                     <div class="form-check form-check-inline ml-5">
                                         <input class="form-check-input" type="radio" name="sexo" id="sexo2"
                                             value="Masculino">
-                                        <label class="form-check-label" for="sexo2">
-                                            Masculino
-                                        </label>
+                                        <label class="form-check-label" for="sexo2">Masculino</label>
                                     </div>
                                 </div>
                             </div>
                         </fieldset>
                     </div>
-
                     <div class="form-row">
-
                         <div class="form-group col-sm-4">
                             <label for="dataNascimento">Data de Nascimento</label>
-                            <input class="form-control border border-dark" type="date" name="dataNascimento" id="dataNascimento">
+                            <input class="form-control border border-dark" type="date" name="dataNascimento"
+                                id="dataNascimento">
                         </div>
                         <div class="form-group col-sm-8">
                             <label for="form-address">Endereço</label>
-                            <input type="search" class="form-control border border-dark" id="form-address" />
+                            <input type="search" class="form-control border border-dark" id="form-address">
                         </div>
-
                     </div>
-
                     <div class="form-row">
                         <div class="form-group col-sm-5">
                             <label for="form-address2">Região</label>
-                            <input type="text" class="form-control border border-dark" id="regiao" />
+                            <input type="text" class="form-control border border-dark" id="regiao">
                         </div>
                         <div class="form-group col-sm-3">
                             <label for="form-city">Cidade</label>
-                            <input type="text" class="form-control border border-dark" id="cidade" placeholder="Cidade">
+                            <input type="text" class="form-control border border-dark" id="cidade">
                         </div>
                         <div class="form-group col-sm-4">
                             <label for="form-zip">CEP</label>
-                            <input type="text" class="form-control border border-dark" id="cep" placeholder="CEP">
+                            <input type="text" class="form-control border border-dark" id="cep">
                         </div>
-
                     </div>
-
                     <div class="form-row">
                         <div class="form-group col-sm-8">
                             <label for="nomeResponsavel1">Nome do Responsável</label>
-                            <input class="form-control border border-dark" type="text" name="nomeResponsavel" id="nomeResponsavel1"
-                                placeholder="João da Silva">
+                            <input class="form-control border border-dark" type="text" name="nomeResponsavel"
+                                id="nomeResponsavel1">
                         </div>
                         <div class="form-group col-sm-4">
                             <label for="localTrabalhoResponsavel1">Local de Trabalho</label>
                             <input class="form-control border border-dark" type="text" name="localTrabalhoResponsavel"
-                                id="localTrabalhoResponsavel1" placeholder="Comercial Juninho">
+                                id="localTrabalhoResponsavel1">
                         </div>
                     </div>
-
                     <div class="form-row">
                         <div class="form-group col-sm-4">
                             <label for="telefoneComercialResponsavel1">Telefone Comercial</label>
-                            <input type="text" class="form-control border border-dark" name="telefoneComercialResponsavel"
-                                id="telefoneComercialResponsavel1">
+                            <input type="text" class="form-control border border-dark"
+                                name="telefoneComercialResponsavel" id="telefoneComercialResponsavel1">
                         </div>
                         <div class="form-group col-sm-4">
                             <label for="telefoneResidencialResponsavel1">Telefone Residencial</label>
-                            <input class="form-control border border-dark" type="text" name="telefoneResidencialResponsavel"
-                                id="telefoneResidencialResponsavel1">
+                            <input class="form-control border border-dark" type="text"
+                                name="telefoneResidencialResponsavel" id="telefoneResidencialResponsavel1">
                         </div>
                         <div class="form-group col-sm-4">
                             <label for="outroTelefoneResponsavel1">Outro</label>
                             <input class="form-control border border-dark" type="text" name="outroTelefoneResponsavel"
                                 id="outroTelefoneResponsavel1">
                         </div>
-
                     </div>
-
                     <div class="form group col-sm-12 text-center mt-3 mb-4">
                         <button class="btn btn-dark">Adicionar Responsável</button>
                     </div>
-
                     <fieldset class="form-group">
                         <div class="row">
                             <legend class="col-form-label col-sm-3 pt-0">Portador de Necessidades Especiais</legend>
@@ -170,26 +146,21 @@
                                     <input class="form-check-input" type="radio" name="necessidadesEspeciais"
                                         onchange="habilitarTextArea(necessidadesEspeciaisDescricao)"
                                         id="necessidadesEspeciais1" value="sim">
-                                    <label class="form-check-label" for="necessidadesEspeciais1">
-                                        Sim
-                                    </label>
+                                    <label class="form-check-label" for="necessidadesEspeciais1">Sim</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="necessidadesEspeciais"
                                         onchange="desabilitarTextArea(necessidadesEspeciaisDescricao)"
                                         id="necessidadesEspeciais2" value="nao">
-                                    <label class="form-check-label" for="necessidadesEspeciais2">
-                                        Não
-                                    </label>
+                                    <label class="form-check-label" for="necessidadesEspeciais2">Não</label>
                                 </div>
                             </div>
                             <div class="form-group col-sm-7">
                                 <textarea class="form-control border border-dark" id="necessidadesEspeciaisDescricao"
-                                    placeholder="Descreva a(s) necessidade(s)" rows="3"></textarea>
+                                    rows="3"></textarea>
                             </div>
                         </div>
                     </fieldset>
-
                     <fieldset class="form-group">
                         <div class="row">
                             <legend class="col-form-label col-sm-3 pt-0">Possui Alergias</legend>
@@ -197,68 +168,56 @@
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="alergias" id="alergias1"
                                         onchange="habilitarTextArea(alergiasDescricao)" value="sim">
-                                    <label class="form-check-label" for="alergias1">
-                                        Sim
-                                    </label>
+                                    <label class="form-check-label" for="alergias1">Sim</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="alergias" id="alergias2"
                                         onchange="desabilitarTextArea(alergiasDescricao)" value="nao">
-                                    <label class="form-check-label" for="alergias2">
-                                        Não
-                                    </label>
+                                    <label class="form-check-label" for="alergias2">Não</label>
                                 </div>
                             </div>
                             <div class="form-group col-sm-7">
                                 <textarea class="form-control border border-dark" id="alergiasDescricao"
-                                    placeholder="Descreva a(s) alergia(s)" rows="3"></textarea>
+                                    rows="3"></textarea>
                             </div>
                         </div>
                     </fieldset>
-
                     <fieldset class="form-group">
                         <div class="row">
                             <legend class="col-form-label col-sm-3 pt-0">Doença que exija cuidado especial</legend>
                             <div class="col-sm-2">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="cuidadosEspeciais"
-                                        onchange="habilitarTextArea(cuidadosEspeciaisDescricao)"
-                                        id="cuidadosEspeciais1" value="sim">
-                                    <label class="form-check-label" for="cuidadosEspeciais1">
-                                        Sim
-                                    </label>
+                                        onchange="habilitarTextArea(cuidadosEspeciaisDescricao)" id="cuidadosEspeciais1"
+                                        value="sim">
+                                    <label class="form-check-label" for="cuidadosEspeciais1">Sim</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="cuidadosEspeciais"
                                         onchange="desabilitarTextArea(cuidadosEspeciaisDescricao)"
                                         id="cuidadosEspeciais2" value="nao">
-                                    <label class="form-check-label" for="cuidadosEspeciais2">
-                                        Não
-                                    </label>
+                                    <label class="form-check-label" for="cuidadosEspeciais2">Não</label>
                                 </div>
                             </div>
                             <div class="form-group col-sm-7">
                                 <textarea class="form-control border border-dark" id="cuidadosEspeciaisDescricao"
-                                    placeholder="Descreva o(s) cuidado(s)" rows="3"></textarea>
+                                    rows="3"></textarea>
                             </div>
                         </div>
                     </fieldset>
-
                     <div class="row">
                         <div class="col-sm-12 text-center">
                             <h3>Dados Escolares</h3>
                         </div>
                     </div>
-
                     <div class="form-row">
                         <div class="form-group col-sm-6">
                             <label for="escola">Escola</label>
-                            <input class="form-control border border-dark" type="text" name="escola" placeholder="Escola que frequenta"
-                                id="escola">
+                            <input class="form-control border border-dark" type="text" name="escola" id="escola">
                         </div>
                         <div class="form-group col-sm-3">
                             <label for="ano">Ano (série)</label>
-                            <input type="text" class="form-control border border-dark" placeholder="Ano escolar" name="ano" id="ano">
+                            <input type="text" class="form-control border border-dark" name="ano" id="ano">
                         </div>
                         <div class="form-group col-sm-3">
                             <label for="turno">Turno</label>
@@ -269,21 +228,21 @@
                             </select>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-sm-12 text-center">
                             <h3>Matrícula</h3>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="form-group col-sm-3">
                             <label for="valorMatricula">Valor da Matrícula</label>
-                            <input class="form-control border border-dark" type="number" name="valorMatricula" id="valorMatricula">
+                            <input class="form-control border border-dark" type="number" name="valorMatricula"
+                                id="valorMatricula">
                         </div>
                         <div class="form-group col-sm-4 offset-sm-1">
                             <label for="valorMensalidade">Valor da Mensalidade</label>
-                            <input class="form-control border border-dark" type="number" name="valorMensalidade" id="valorMensalidade">
+                            <input class="form-control border border-dark" type="number" name="valorMensalidade"
+                                id="valorMensalidade">
                         </div>
                         <div class="form-group col-sm-3 offset-sm-1">
                             <label for="vencimentoMensalidade">Vencimento da Mensalidade</label>
@@ -291,30 +250,32 @@
                                 id="vencimentoMensalidade">
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="form-group col-sm-4">
                             <label for="dataMatricula">Data da Matrícula</label>
-                            <input class="form-control border border-dark" type="date" name="dataMatricula" id="dataMatricula">
+                            <input class="form-control border border-dark" type="date" name="dataMatricula"
+                                id="dataMatricula">
                         </div>
-                        <div class="form-group offset-sm-4 col-sm-4">
+                        <div class="form-group col-sm-4">
+                            <label for="turma">Turma</label>
+                            <input class="form-control border border-dark" type="number" name="turma"
+                                id="turma">
+                        </div>
+                        <div class="form-group col-sm-4">
                             <label for="dataInicio">Data de Início</label>
-                            <input type="date" class="form-control border border-dark" name="dataInicio" id="dataInicio">
+                            <input type="date" class="form-control border border-dark" name="dataInicio"
+                                id="dataInicio">
                         </div>
                     </div>
-
                     <div class="row mt-5">
                         <div class="col-sm-12 text-center">
                             <a class="btn btn-dark" href="home.html">Salvar</a>
                         </div>
                     </div>
                 </form>
-
             </div>
         </div>
     </div>
-
-
     <script src="assets/js/cadAluno.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

@@ -1,11 +1,11 @@
-body{
+body {
     padding: 0;
     margin: 0;
     height:100%;
     background-color: #756E6E;
 }
 
-.form-radius{
+.form-radius {
     border-radius: 20px;
     background-color: #ffffff;
 }

@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Funcionário</title>
+    <title>Schools | Cadastro de Funcionário</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
-
     <div class="row mb-5 w-100 mx-auto">
         <div class="col-sm-12">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -20,7 +20,6 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
@@ -33,7 +32,6 @@
                             <a class="nav-link" href="entradaESaida.html">Entradas e Saídas</a>
                         </li>
                     </ul>
-
                 </div>
                 <span class="navbar-text">
                     <a href="#">Sair</a>
@@ -41,7 +39,6 @@
             </nav>
         </div>
     </div>
-
     <form action="#" method="post">
         <div class="container">
             <div class="row">
@@ -50,12 +47,16 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-sm-12 text-center">
+                    <img src="assets/img/usuario.png" alt="Aluno">
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-sm-12 form-group">
                     <label for="Nome">Nome completo</label>
                     <input type="text" id="Nome" class="form-control border border-dark">
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-8">
                     <div class="form-row">
@@ -75,59 +76,55 @@
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="sexo" id="sexo1"
                                             value="feminino">
-                                        <label class="form-check-label" for="sexo1">
-                                            Feminino
-                                        </label>
+                                        <label class="form-check-label" for="sexo1">Feminino</label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="sexo" id="sexo2"
                                             value="Masculino">
-                                        <label class="form-check-label mr-0" for="sexo2">
-                                            Masculino
-                                        </label>
+                                        <label class="form-check-label mr-0" for="sexo2">Masculino</label>
                                     </div>
                                 </div>
                             </div>
                         </fieldset>
                         <div class="col-sm-3 form-group">
-                            <label for="CPF">CPF</label>
-                            <input type="number" id="CPF" class="form-control border border-dark">
+                            <label for="cpf">CPF</label>
+                            <input type="number" id="cpf" class="form-control border border-dark">
                         </div>
                         <div class="col-sm-2 form-group">
-                            <label for="RG">RG</label>
-                            <input type="number" id="RG" class="form-control border border-dark">
+                            <label for="rg">RG</label>
+                            <input type="number" id="rg" class="form-control border border-dark">
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="col-3 form-group">
-                            <label for="CEP">CEP</label>
-                            <input type="text" id="CEP" class="form-control border border-dark">
-                        </div>
                         <div class="col-7 form-group">
-                            <label for="Logradouro">Logradouro</label>
-                            <input type="text" id="Logradouro" class="form-control border border-dark">
+                            <label for="form-address">Endereço</label>
+                            <input type="search" id="form-address" class="form-control border border-dark">
+                        </div>
+                        <div class="col-sm form-group">
+                            <label for="form-address2">Região</label>
+                            <input type="text" id="regiao" class="form-control border border-dark">
+                        </div>
+                        <div class="col-5 form-group">
+                            <label for="city">Cidade</label>
+                            <input type="text" id="cidade" class="form-control border border-dark">
+                        </div>
+                        <div class="col-3 form-group">
+                            <label for="zip">CEP</label>
+                            <input type="text" id="cep" class="form-control border border-dark">
                         </div>
                         <div class="col-2 form-group">
-                            <label for="Número">Número</label>
-                            <input type="number" id="Número" class="form-control border border-dark">
+                            <label for="numero">Número</label>
+                            <input type="number" id="numero" class="form-control border border-dark">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-2 form-group">
-                            <label for="Complemento">Complemento</label>
-                            <input type="text" id="Complemento" class="form-control border border-dark">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" id="complemento" class="form-control border border-dark">
                         </div>
                         <div class="col-3 form-group">
                             <label for="Bairro">Bairro</label>
                             <input type="text" id="Bairro" class="form-control border border-dark">
-                        </div>
-                        <div class="col-5 form-group">
-                            <label for="Cidade">Cidade</label>
-                            <input type="text" id="Cidade" class="form-control border border-dark">
-                        </div>
-                        <div class="col-sm form-group">
-                            <label for="Estado">Estado</label>
-                            <input type="text" id="Estado" class="form-control border border-dark">
                         </div>
                     </div>
                     <div class="form-row">
@@ -136,9 +133,7 @@
                             <input type="date" id="Admissao" class="form-control border border-dark">
                         </div>
                     </div>
-
                 </div>
-
                 <div class="col-4">
                     <div class="col-12">
                         <h2>Telefones e E-mail</h2>
@@ -153,12 +148,14 @@
                     </div>
                 </div>
             </div>
-
             <div class="row text-center">
                 <a href="home.html" class="btn btn-dark mx-auto">Salvar</a>
             </div>
     </form>
     </div>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/places.js@1.19.0"></script>
+<script src="assets/js/cadAlunoAlgolia.js"></script>
 
 </html>
