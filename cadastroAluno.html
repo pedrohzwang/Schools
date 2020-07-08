@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schools | Cadastro de Aluno</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
@@ -63,7 +63,7 @@
         </div>
         <div class="row">
             <div class="col-sm-12">
-                <form action="#" method="post">
+                <form action="" method="" name="formulario">
                     <div class="form-row">
                         <div class="form-group col-sm-7">
                             <label for="nome">Nome da criança</label>
@@ -264,8 +264,11 @@
                         </div>
                         <div class="form-group col-sm-4">
                             <label for="turma">Turma</label>
-                            <input class="form-control border border-dark" type="number" name="turma"
-                                id="turma">
+                            <select class="form-control border border-dark" name="turma" id="turma">
+                                <option selected disabled value="">Escolha...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
                         </div>
                         <div class="form-group col-sm-4">
                             <label for="dataInicio">Data de Início</label>
@@ -275,13 +278,16 @@
                     </div>
                     <div class="row mt-5">
                         <div class="col-sm-12 text-center">
-                            <a class="btn btn-dark" href="home.html">Salvar</a>
+                           <input type="button" onclick="enviar()" class="btn btn-dark" value="Salvar">
                         </div>
                     </div>
                 </form>
+                
             </div>
         </div>
     </div>
+    
+
     <script src="assets/js/cadAluno.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -295,6 +301,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/places.js@1.19.0"></script>
     <script src="assets/js/cadAlunoAlgolia.js"></script>
+
 </body>
 
 </html>
