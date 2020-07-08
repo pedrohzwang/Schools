@@ -104,6 +104,8 @@
                             <label for="form-address2">Região</label>
                             <input type="text" id="regiao" class="form-control border border-dark">
                         </div>
+                    </div>
+                    <div class="form-row">
                         <div class="col-5 form-group">
                             <label for="city">Cidade</label>
                             <input type="text" id="cidade" class="form-control border border-dark">
@@ -116,23 +118,23 @@
                             <label for="numero">Número</label>
                             <input type="number" id="numero" class="form-control border border-dark">
                         </div>
-                    </div>
-                    <div class="form-row">
                         <div class="col-2 form-group">
                             <label for="complemento">Complemento</label>
                             <input type="text" id="complemento" class="form-control border border-dark">
                         </div>
-                        <div class="col-3 form-group">
+                    </div>
+                    <div class="form-row mb-3">
+                        
+                        <div class="col-5 form-group">
                             <label for="Bairro">Bairro</label>
                             <input type="text" id="Bairro" class="form-control border border-dark">
                         </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col-4 form-group">
+                        <div class="col-4 form-group offset-3">
                             <label for="Admissao">Admissão</label>
                             <input type="date" id="Admissao" class="form-control border border-dark">
                         </div>
                     </div>
+                    
                 </div>
                 <div class="col-4">
                     <div class="col-12">
@@ -149,7 +151,9 @@
                 </div>
             </div>
             <div class="row text-center">
-                <a href="home.html" class="btn btn-dark mx-auto">Salvar</a>
+                <div class="col-12">
+                    <input type="button" onclick="enviar()" class="btn btn-dark" value="Salvar">
+                </div>
             </div>
     </form>
     </div>
